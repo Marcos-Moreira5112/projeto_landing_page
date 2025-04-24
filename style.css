@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* ------------------header area------------------ */
+
+header {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-up > .logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-up ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-up ul li {
+    list-style: none;
+}
+
+.header-up ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.header-down .titulo {
+    font: bold 48px "Roboto", sans-serif;
+}
