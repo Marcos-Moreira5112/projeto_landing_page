@@ -9,14 +9,18 @@
 body {
     display: flex;
     flex-flow: column nowrap;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ------------------header area------------------ */
 
 header {
+    display: flex;
+    flex-flow: column nowrap;
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
+    font-weight: 300;
 }
 
 .header-up {
@@ -24,16 +28,19 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin: auto;
+    width: 850px;
 }
 
 .header-up > .logo {
     font-size: 24px;
+    font-weight: 800;
     color: #f9faf8;
 }
 
 .header-up ul {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .header-up ul li {
@@ -45,6 +52,37 @@ header {
     color: #e5e7eb;
 }
 
+.header-up ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.header-down {
+    margin: auto;
+    width: 850px;
+    padding: 40px 0px;
+}
+
+.header-down .header-text {
+    display: flex;
+    width: 480px;
+    flex-flow: column wrap;
+    padding: 0px 20px;
+}
+
 .header-down .titulo {
     font: bold 48px "Roboto", sans-serif;
+    color: #f9faf8;
+}
+.header-down .subtitulo {
+    margin: 5px 0px 10px;
+}
+
+.header-down .btn-cadastre-se {
+    padding: 5px;
+    width: 100px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
