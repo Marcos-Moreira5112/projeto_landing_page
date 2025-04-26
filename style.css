@@ -12,6 +12,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
 /* ------------------header area------------------ */
 
 header {
@@ -85,4 +93,47 @@ header {
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+/* ------------------information area------------------ */
+
+.container-informations {
+    width: 850px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.title-informations {
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.informations {
+    display: flex;
+    padding: 0px 0px 80px 0px;
+    justify-content: space-between;
+}
+
+.info-ilustrations {
+    border: 3px solid #3882f6;
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+}
+
+.small-inform {
+    display: flex;
+    width: 130px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+/* ------------------blockquote area------------------ */
+
+blockquote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: light;
 }
