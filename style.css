@@ -14,10 +14,7 @@ body {
 
 main {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+    flex-flow: row nowrap;
 }
 
 /* ------------------header area------------------ */
@@ -98,36 +95,46 @@ header {
 /* ------------------information area------------------ */
 
 .container-informations {
-    width: 850px;
+    flex: 0 1 850px;
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
-}
+} 
 
 .title-informations {
     display: flex;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
     justify-content: center;
     align-items: center;
 }
 
 .informations {
     display: flex;
-    padding: 0px 0px 80px 0px;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0px 0px 60px 0px;
+    justify-content: space-evenly;
+}
+
+.small-inform {
+    margin: 40px 20px 20px 20px;
+    display: flex;
+    flex: 0 1 130px;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .info-ilustrations {
     border: 3px solid #3882f6;
-    width: 130px;
+    flex: 0 1 130px;
     height: 130px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.small-inform {
-    display: flex;
+.small-inform > p {
+    margin-top: 8px;
     width: 130px;
-    justify-content: center;
-    flex-flow: row wrap;
+    font-size: 14px;
+    text-align: center;
 }
 
 /* ------------------blockquote area------------------ */
