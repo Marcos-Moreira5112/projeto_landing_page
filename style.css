@@ -65,7 +65,7 @@ header {
 .header-down {
     margin: auto;
     width: 850px;
-    padding: 40px 0px;
+    padding: 50px 0px 40px 0px;
 }
 
 .header-down .header-text {
@@ -95,9 +95,9 @@ header {
 /* ------------------information area------------------ */
 
 .container-informations {
+    display: flex;
     flex: 0 1 850px;
     margin: auto;
-    display: flex;
     flex-flow: column nowrap;
 } 
 
@@ -140,7 +140,34 @@ header {
 /* ------------------blockquote area------------------ */
 
 blockquote {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
-    font-size: 36px;
+    font: 200 30px "Roboto", sans-serif;
     font-weight: light;
+}
+
+.quote-container {
+    display: flex;
+    flex: 0 1 auto;
+    max-width: 600px;
+    width: 100%;
+    flex-flow: column nowrap;
+    padding: 100px 20px;
+}
+
+blockquote .quote {
+    text-align: justify;
+    font-style: italic;
+}
+
+blockquote .author {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+blockquote .author strong {
+    font-weight: 400;
 }
