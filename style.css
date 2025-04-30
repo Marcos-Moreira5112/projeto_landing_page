@@ -21,6 +21,7 @@ main {
 
 header {
     display: flex;
+    flex: 0 1 auto;
     flex-flow: column nowrap;
     background-color: #1f2937;
     color: #e5e7eb;
@@ -30,21 +31,25 @@ header {
 
 .header-up {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    flex: 0 1 auto;
     align-items: center;
     padding: 20px;
     margin: auto;
-    width: 850px;
+    max-width: 850px;
+    width: 100%;
 }
 
 .header-up > .logo {
     font-size: 24px;
+    margin-right: 30px;
     font-weight: 800;
     color: #f9faf8;
 }
 
 .header-up ul {
-    display: flex;
+    display: flex;;
     gap: 30px;
 }
 
@@ -64,13 +69,15 @@ header {
 
 .header-down {
     margin: auto;
-    width: 850px;
+    max-width: 850px;
+    width: 100%;
     padding: 50px 0px 40px 0px;
 }
 
 .header-down .header-text {
     display: flex;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     flex-flow: column wrap;
     padding: 0px 20px;
 }
@@ -170,4 +177,62 @@ blockquote .author {
 
 blockquote .author strong {
     font-weight: 400;
+}
+
+/* ------------------Call-act area------------------ */
+
+.container-callact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80VW;
+    width: 850px;
+    margin: 70px auto;
+    background-color: #3882f6;
+    border-radius: 5px;
+}
+
+.callact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    width: 690px;
+    padding: 30px 0px;
+    gap: 15px;
+}
+
+.p-call {
+    width: 500px;
+    display: flex;
+}
+
+.title-callact {
+    font-weight: 500;
+    color: #f9faf8;
+    margin-bottom: 3px;
+}
+
+.text-callact {
+    font-weight: 200;
+    color: #f9faf8;
+}
+
+.callact input {
+    width: 120px;
+    height: 40px;
+    background-color: #3882f6;
+    border-radius: 8px;
+    border: 1.5px solid #f9faf8;
+    color: #f9faf8;
+    font-size: 16px;
+}
+
+.callact input:hover {
+    cursor: pointer;
+}
+
+.callact input:active {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.600);
 }
