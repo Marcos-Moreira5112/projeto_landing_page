@@ -152,7 +152,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
-    font: 200 30px "Roboto", sans-serif;
+    font: 200 26px "Roboto", sans-serif;
     font-weight: light;
 }
 
@@ -162,7 +162,7 @@ blockquote {
     max-width: 600px;
     width: 100%;
     flex-flow: column nowrap;
-    padding: 100px 20px;
+    padding: 100px 40px;
 }
 
 blockquote .quote {
@@ -199,7 +199,7 @@ blockquote .author strong {
     align-items: center;
     max-width: 90%;
     width: 690px;
-    padding: 30px 0px;
+    padding: 40px 0px;
     gap: 15px;
 }
 
@@ -235,4 +235,18 @@ blockquote .author strong {
 
 .callact input:active {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.600);
+}
+
+/* ------------------footer area------------------ */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+}
+
+footer > p {
+    padding: 25px;
+    color: #e5e7eb;
 }
